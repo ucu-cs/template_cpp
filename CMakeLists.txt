@@ -13,15 +13,22 @@ option(ENABLE_PVS_STUDIO "Check using command-line PVS-Studio." ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
 # Warnings
+if (WARNINGS_AS_ERRORS)
+    set(MSVC_WARNINGS ${MSVC_WARNINGS} /WX /W4)
+    set(GCC_CLANG_WARNINGS ${GCC_CLANG_WARNINGS} -Wall -Wextra -pedantic -Werror -Werror=vla)
+else ()
+    set(GCC_CLANG_WARNINGS ${GCC_CLANG_WARNINGS} -Werror=vla)
+endif ()
 if (MSVC)
-    # warning level 4 and all warnings as errors
-    add_compile_options(/W4 /WX)
-else()
-    # lots of warnings and all warnings as errors
-    add_compile_options(-Wall -Wextra -pedantic -Werror -Werror=vla)
-endif()
-# Include fixed CMake configuration
-include(cmake/config.cmake)
+    add_compile_options(${MSVC_WARNINGS})
+else ()
+    add_compile_options(${GCC_CLANG_WARNINGS})
+endif ()
+
+# Forbid in-source builds
+if (PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
+    message(FATAL_ERROR "In-source builds not allowed. Make a build directory and run CMake from there.\n")
+endif ()
 
 # Include headers
 include_directories(include)
