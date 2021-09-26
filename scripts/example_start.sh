@@ -1,4 +1,19 @@
 #!/bin/bash -x
+# This is an example of start.sh script (this particular can be used for mpi tasks)
+#
+#
+# Main goal of this script - to automate compilation and execution of the project 
+#     with only one script. Example containes compilation types debug (Debug) and 
+#     optimize (Release), also "number of processes" for MPI run. 
+#     It is easy scalable, to make possible change "number of threads", "input file", 
+#     "output file" or "number of executions" and much more.
+# 
+# It can be used for "comparison of result files" or some other post-processing
+#     because bash is well-known for it's text processing abilities
+#
+#
+# It is really useful for "Architecture of computer systems" course, not so much 
+#     for "Operating systems"
 
 set -o errexit
 set -o nounset
@@ -76,4 +91,3 @@ if [[ "$optimize_build" == true ]]; then
     popd
   )
 fi
-
