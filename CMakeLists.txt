@@ -15,7 +15,7 @@ option(ENABLE_PVS_STUDIO "Check using command-line PVS-Studio." ON)
 #! ENABLE_SANITIZERS is the option for the test builds!
 #  Definitely enable it while developing.
 #  Disable it for the production builds and before submitting for grading!
-option(ENABLE_SANITIZERS "Use sanitizers to detect errors." ON)
+option(ENABLE_SANITIZERS "Use sanitizers to detect errors." OFF)
 
 #! Set output directories
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
