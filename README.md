@@ -2,6 +2,7 @@
 
 # Lab work <mark>NUMBER</mark>: <mark>SHORT TOPIC</mark>
 Authors (team): <mark>AUTHORS WITH GITHUB LINKS</mark>
+Variant: <mark>VARIANT SHOULD BE HERE</mark>
 ## Before 
 
 <mark>DESCRIBE PREREQUIREMENTS</mark>
