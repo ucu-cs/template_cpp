@@ -1,7 +1,7 @@
 <mark>Template for your README. Remove all unused parts and instructions</mark>
 
 # Lab work <mark>NUMBER</mark>: <mark>SHORT TOPIC</mark>
-Authors (team): <mark>AUTHORS WITH GITHUB LINKS</mark>
+Authors (team): <mark>AUTHORS WITH GITHUB LINKS</mark><br>
 Variant: <mark>VARIANT SHOULD BE HERE</mark>
 ## Before 
 
