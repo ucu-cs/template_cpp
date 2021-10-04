@@ -21,7 +21,7 @@ Variant: <mark>VARIANT SHOULD BE HERE</mark>
 
 ### Important!
 
-<mark>WHAT ELSE WE SHOLD KNOW ABOUT YOUR WORK</mark>
+<mark>WHAT ELSE WE SHOULD KNOW ABOUT YOUR WORK</mark>
 
 # Results
 
