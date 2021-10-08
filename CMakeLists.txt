@@ -25,9 +25,6 @@ if (NOT CMAKE_BUILD_TYPE)
 	set(CMAKE_BUILD_TYPE Release)
 endif ()
 
-# Include invariant CMake configuration
-include(cmake/config.cmake)
-
 #! Include headers
 include_directories(include)
 
@@ -43,3 +40,11 @@ target_link_libraries(${PROJECT_NAME} Boost::program_options)
 set_target_properties(${PROJECT_NAME}
 						PROPERTIES
 						RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+
+#####################################
+# Define ALL_TARGETS variable to use in PVS and Sanitizers
+set (ALL_TARGETS ${PROJECT_NAME} ${LIB_NAME})
+
+# Include fixed CMake configuration
+include(cmake/config.cmake)
+ 
