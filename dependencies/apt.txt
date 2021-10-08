@@ -2,3 +2,4 @@
 # It is acceptable if there are too many Boost libraries to manage.
 # libboost-all-dev
 libboost-program-options-dev
+libboost-all-dev
