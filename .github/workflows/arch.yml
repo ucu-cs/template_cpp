@@ -29,7 +29,7 @@ jobs:
     - name: Install dependencies
       run: |
         pacman -Suy --noconfirm
-        sed 's/\r$//' dependencies/pacman.txt | sed 's/#.*//' | xargs sudo pacman -S --noconfirm
+        sed 's/\r$//' dependencies/pacman.txt | sed 's/#.*//' | xargs pacman -S --noconfirm
         rm -rf /usr/bin/cc
         rm -rf /usr/bin/c++
 
