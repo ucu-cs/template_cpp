@@ -3,34 +3,35 @@
 # Lab work <mark>NUMBER</mark>: <mark>SHORT TOPIC</mark>
 Authors (team): <mark>AUTHORS WITH GITHUB LINKS</mark><br>
 Variant: <mark>VARIANT SHOULD BE HERE</mark>
-## Before 
+## Prerequisites
 
-<mark>DESCRIBE PREREQUIREMENTS</mark>
+<mark>LIST LIBRARIES/TOOLS/OTHER UTILITIES THAT NEED TO BE INSTALLED (E.G. GCC, OPENMP, CMAKE ETC)</mark>
 
-### Compiling
+### Compilation
 
-<mark>DESCRIBE PREREQUIREMENTS AND INSTALL HERE</mark>
+<mark>HOW TO COMPILE YOUR PROGRAM? (RECOMMENDED: ./comile.sh)</mark>
 
-### Installing
+### Installation
 
-<mark>DESCRIBE THE INSTALL HERE</mark>
+<mark>DESCRIBE THE INSTALLATION PROCESS (USE ./dependencies FOLDER)</mark>
 
 ### Usage
 
-<mark>DESCRIBE THE USAGE HERE</mark>
+<mark>PROVIDE AN EXAMPLE OF HOW TO RUN YOUR PROGRAM (IT CAN BE A COMMAND LINE WITH INPUT AND EXPECTED OUTPUT)</mark>
 
 ### Important!
 
-<mark>WHAT ELSE WE SHOULD KNOW ABOUT YOUR WORK</mark>
+<mark>WHAT ELSE SHOULD WE KNOW ABOUT YOUR WORK? (E.G. KNOWN ISSUES, BUGS, SPECIAL BEHAVIOR ETC)</mark>
 
-# Results
+### Results
 
-<mark>DESCRIBE RESULTS HERE</mark>
+<mark>DESCRIBE THE RESULTS OF THE WORK YOU DID. WHAT DID YOU LEARN OR FIND INTERESTING?</mark>
 
 # Additional tasks
-<mark>LIST OF ADDITIONAL TASKS<mark>
+<mark>IF APPLICABLE, LIST ALL THE EXTRA FEATURES YOU ADDED. PROVIDE DETAILS<mark>
 
 # ATTENTION!
+  
 Additional tasks not listed in the previous paragraph would not be graded.
 
 Be sure to provide a complete list of authors.
