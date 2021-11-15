@@ -17,6 +17,10 @@ set(ENABLE_PVS_STUDIO OFF)
 #  Disable it for the production builds and before submitting for grading!
 set(ENABLE_SANITIZERS OFF)
 
+#! Warnings as errors should be imported here
+#! If you don't want to use them - switch them off in the corresponding line behind
+include(cmake/defaults/CompilerWarnings.cmake)
+
 #! Set output directories
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
