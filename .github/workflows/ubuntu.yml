@@ -3,14 +3,14 @@ name: Ubuntu
 on:
   pull_request:
     branches: [ master ]
+  push:
+    branches: [ master ]
   workflow_dispatch:
-  # push:
-    # branches: [ master ]
-
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+#     runs-on: ubuntu-20.04
+    runs-on: self-hosted
     strategy:
       matrix:
         cc: [gcc, clang]
@@ -23,11 +23,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: sed 's/\r$//' dependencies/apt.txt | sed 's/#.*//' | xargs sudo apt-get install -y
+#     - name: Install dependencies
+#       run: sed 's/\r$//' apt_packages.txt | sed 's/#.*//' | xargs sudo apt-get install -y
 
     - name: Configure
-      run: CC=${{ matrix.cc }} CXX=${{ matrix.cxx }} cmake -G"Unix Makefiles" -Bbuild
+      run: |
+          git submodule init
+          git submodule update
+          CC=${{ matrix.cc }} CXX=${{ matrix.cxx }} cmake -G"Unix Makefiles" -Bbuild
 
     - name: Build
       run: cmake --build build
