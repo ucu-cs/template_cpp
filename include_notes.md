@@ -1,3 +1,9 @@
+# General recomendations
+It is important to split large files but is even more important to keep care of your files logic. Split subprojects into separate directories. For most parts, it is enough to have two files for one class:
+- one header `.h` 
+- one code .cpp`files. 
+Header `main.h` is mostly useless so one should not create it without adequate justification.
+
 # The `include` directory
 
 Since there is no standard C folder structure, you can choose one of the two structures proposed below. The rationale behind such decision is that these two are best suited and therefore most commonly used for small-scale projects.
@@ -32,7 +38,7 @@ include/
 
 ## Header files
 
-A header file is a file containing C/C++ declarations and definitions that are shared between several source files. The source files can copy the contents of the header file by using `#include` directive, performed by the C preprocessor. 
+A_flag header file is a file containing C/C++ declarations and definitions that are shared between several source files. The source files can copy the contents of the header file by using `#include` directive, performed by the C preprocessor. 
 
 **Including a header file produces the same results as copying the contents of the header file into the source file**. Manual copying would be time-consuming and error-prone. With a header file, the related declarations appear in only one place. If they need to be changed, they can be changed in one place, and programs that include the header file will automatically use the new version when next recompiled.
 
