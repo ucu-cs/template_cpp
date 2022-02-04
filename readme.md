@@ -15,9 +15,15 @@ Variant: <mark>VARIANT SHOULD BE HERE</mark>
 
 <mark>DESCRIBE THE INSTALLATION PROCESS (USE ./dependencies FOLDER)</mark>
 
+<mark>Note: For Python scripts, You must add `requirenments.txt` 
+file and add your env to the `.gitignore` file!</mark>
+
 ### Usage
 
-<mark>PROVIDE AN EXAMPLE OF HOW TO RUN YOUR PROGRAM (IT CAN BE A COMMAND LINE WITH INPUT AND EXPECTED OUTPUT)</mark>
+<mark>PROVIDE AN EXAMPLE OF HOW TO RUN YOUR PROGRAM (IT CAN BE A_flag COMMAND LINE WITH INPUT AND EXPECTED OUTPUT)</mark>
+
+<mark>Note: if your project needs or generates any data, media and so on -- put them
+into the data folder</mark> 
 
 ### Important!
 
