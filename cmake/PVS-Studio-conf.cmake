@@ -1,8 +1,8 @@
 if (ENABLE_PVS_STUDIO)
-    message("- PVS Studio enabled. You can disable it in CMakeLists.txt")
+    message("- UCU.APPS.CS: PVS Studio enabled in CMakeLists.txt")
     set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
     include(cmake/extra/PVS-Studio.cmake)
-    foreach(TARGET IN LISTS ${ALL_TARGETS})
+    foreach(TARGET ${ALL_TARGETS})
         pvs_studio_add_target(TARGET ${TARGET}.analyze ALL
                 OUTPUT FORMAT errorfile
                 ANALYZE ${TARGET}
@@ -10,5 +10,5 @@ if (ENABLE_PVS_STUDIO)
     endforeach()
 
 else ()
-    message(NOTICE "\nConsider using PVS-Studio with `-DENABLE_PVS_STUDIO=ON` flag or Windows GUI application.\n")
+    message(NOTICE "\n- UCU.APPS.CS: Consider enabling PVS-Studio in CMakeLists.txt by 'set(ENABLE_PVS_STUDIO ON)' flag or use Windows PVS Studio GUI.")
 endif ()
