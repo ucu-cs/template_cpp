@@ -98,7 +98,3 @@ fi
 if [[ "$remove_dirs" == true ]]; then
   rm -rf ./cmake-build-debug ./cmake-build-release
 fi
-
-# Do not remove by default
-# TODO: add corresponding option to this script.
-#
