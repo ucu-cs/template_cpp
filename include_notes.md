@@ -1,7 +1,7 @@
 # General recomendations
 It is important to split large files but is even more important to keep care of your files logic. Split subprojects into separate directories. For most parts, it is enough to have two files for one class:
 - one header `.h` 
-- one code .cpp`files. 
+- one code `.cpp` files. 
 Header `main.h` is mostly useless so one should not create it without adequate justification.
 
 # The `include` directory
@@ -68,7 +68,7 @@ If the second variant is used, the preprocessor will first look in the directory
 
  The `quote` directories can be specified in GCC using the `-iquote` argument. To avoid searching in the system directories, GCC option `-nostdinc` can be used. To explicitly view which directories are scanned, use the `-v` option.
 
-**Note**: while these option are useful for testing, **avoid using them when submitting your work**. Use appropriate [**Cmake commands**](#cmake), such as `target_include_directories` instead.
+**Note**: while these options are useful for testing, **avoid using them when submitting your work**. Use appropriate [**Cmake commands**](#cmake), such as `target_include_directories` instead.
 
 **Note**: when including your user-defined headers, **never use absolute paths!**
 
