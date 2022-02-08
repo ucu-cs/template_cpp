@@ -67,7 +67,7 @@ If the second variant is used, the preprocessor will first look in the directory
 
  The `quote` directories can be specified in GCC using the `-iquote` argument. To avoid searching in the system directories, GCC option `-nostdinc` can be used. To explicitly view which directories are scanned, use the `-v` option.
 
-**Note**: while these option are useful for testing, **avoid using them when submitting your work**. Use appropriate [**Cmake commands**](#cmake), such as `target_include_directories` instead.
+**Note**: while these options are useful for testing, **avoid using them when submitting your work**. Use appropriate [**Cmake commands**](#cmake), such as `target_include_directories` instead.
 
 **Note**: when including your user-defined headers, **never use absolute paths!**
 
