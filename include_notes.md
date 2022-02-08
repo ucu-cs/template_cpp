@@ -1,7 +1,7 @@
 # General recomendations
 It is important to split large files but is even more important to keep care of your files logic. Split subprojects into separate directories. For most parts, it is enough to have two files for one class:
 - one header `.h` 
-- one code .cpp`files. 
+- one code `.cpp` files. 
 Header `main.h` is mostly useless so one should not create it without adequate justification.
 
 # The `include` directory
