@@ -6,7 +6,7 @@ Header `main.h` is mostly useless so one should not create it without adequate j
 
 # The `include` directory
 
-Since there is no standard C folder structure, you can choose one of the two structures proposed below. The rationale behind such decision is that these two are best suited and therefore most commonly used for small-scale projects.
+Since there is no standard C or C++ project structure, you can choose one of the two structures proposed below. The rationale behind such decision is that these two are best suited and therefore most commonly used for small-scale projects.
 
 - The `include` directory contains all the header files included by your `.c` or `.cpp` files with corresponding names.
 For example:
@@ -17,7 +17,6 @@ src/
     dispatcher.cpp
     helper_funcs.cpp
 include/
-    main.h
     dispatcher.h
     helper_funcs.h
 ```
