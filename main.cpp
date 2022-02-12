@@ -4,8 +4,8 @@
 #include <iostream>
 #include "options_parser.h"
 
-int main(int argv, char* argc[]) {
-    command_line_options_t command_line_options{argv, argc};
+int main(int argc, char* argv[]) {
+    command_line_options_t command_line_options{argc, argv};
     std::cout << "A flag value: " << command_line_options.get_A_flag() << std::endl;
-	return 0;
+    return 0;
 }
