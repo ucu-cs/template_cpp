@@ -45,7 +45,7 @@ while [[ $# -gt 0 ]]; do
     shift
     ;;
   -h | --help)
-    echo "Usage: ./start.sh [options]
+    echo "Usage: ./compile.sh [options]
   Options:
     -h      --help                  Show help message.
     -O      --optimize-build        Compile with optimization before executing.
