@@ -10,7 +10,7 @@ if (ENABLE_SANITIZERS OR ENABLE_UBSan OR ENABLE_MSAN OR ENABLE_ASAN OR ENABLE_TS
         endif ()
 
         # Only one of Memory, Address, or Thread sanitizers is applicable at the time
-        if (CMAKE_C_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+        if (CMAKE_C_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
             if (ENABLE_MSAN)
                 message("- UCU.APPS.CS: MSAN Enabled in CMakeLists.txt")
                 set(SANITIZE_MEMORY ON)
@@ -40,4 +40,3 @@ if (ENABLE_SANITIZERS OR ENABLE_UBSan OR ENABLE_MSAN OR ENABLE_ASAN OR ENABLE_TS
     endif ()
 
 endif () # For MSVC
-
