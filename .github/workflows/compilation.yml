@@ -4,10 +4,18 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - 'data/**'
+      - '**.md'
+      - '**.py'
+      - '**.sh'
+      - '**.txt'
+      - '!**/CMakeLists.txt'
+      - '!dependencies/apt.txt'
   workflow_dispatch:
   pull_request:
-    branches: 
-    - master 
+    branches:
+    - master
     
 concurrency:
   group: ci-${{ github.actor }}
