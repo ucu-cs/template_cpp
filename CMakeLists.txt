@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.15)
 set(PROJECT_NAME template)
 project(${PROJECT_NAME} C CXX) # project(${PROJECT_NAME} C CXX ASM)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 ##########################################################
 # User configurable options of the template
@@ -28,7 +28,7 @@ set(ENABLE_PVS_STUDIO OFF)
 #  Only one of the Memory (MSAN), Address (ASAN), or Thread (TSan)
 #  sanitizers is applicable at the time -- the first defined.
 
-#! UndefinedBehaviorSanitizer (UBSan) -- detects undefined behavior.
+#! UndefinedBehaviorSanitizer (UBSan).
 #  Info: https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html
 set(ENABLE_UBSan OFF)
 #! AddressSanitizer -- detects use after free or after scope exit,
