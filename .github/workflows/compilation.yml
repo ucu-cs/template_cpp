@@ -10,8 +10,7 @@ on:
       - '**.py'
       - '**.sh'
       - '**.txt'
-      - '!**/CMakeLists.txt'
-      - '!dependencies/apt.txt'
+
   workflow_dispatch:
   pull_request:
     branches:
@@ -24,23 +23,9 @@ concurrency:
 jobs:
   build:
     runs-on: self-hosted
-    strategy:
-      matrix:
-        cc: [gcc, clang]
-        include:
-          - cc: gcc
-            cxx: g++
-          - cc: clang
-            cxx: clang++
 
     steps:
     - uses: actions/checkout@v3
     
-    - name: Install dependencies
-      run: sed 's/\r$//' dependencies/apt.txt | sed 's/#.*//' | xargs sudo apt install -y
-    
-    - name: Configure
-      run: CC=${{ matrix.cc }} CXX=${{ matrix.cxx }} cmake -G"Unix Makefiles" -Bbuild
-
-    - name: Build
-      run: cmake --build build
+    - name: Test gcc/clang compilation
+      run: docker run --rm --shm-size=2048 --mount source=$(pwd),target=/home/root,type=bind -w /home/root apps_ubuntu
