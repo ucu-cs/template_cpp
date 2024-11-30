@@ -9,13 +9,13 @@ Variant: <mark>VARIANT SHOULD BE HERE</mark>
 
 ### Compilation
 
-<mark>HOW TO COMPILE YOUR PROGRAM? (RECOMMENDED: ./comile.sh)</mark>
+<mark>HOW TO COMPILE YOUR PROGRAM? (RECOMMENDED: ./compile.sh)</mark>
 
 ### Installation
 
 <mark>DESCRIBE THE INSTALLATION PROCESS (USE ./dependencies FOLDER)</mark>
 
-<mark>Note: For Python scripts, You must add `requirenments.txt` 
+<mark>Note: For Python scripts, You must add `requirements.txt` 
 file and add your env to the `.gitignore` file!</mark>
 
 ### Usage
