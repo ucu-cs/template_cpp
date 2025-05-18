@@ -42,7 +42,7 @@ set(ENABLE_TSan OFF)
 #  Info: https://github.com/google/sanitizers/wiki/MemorySanitizer
 set(ENABLE_MSAN OFF)
 
-#! Be default -- build release version if not specified otherwise.
+#! By default -- build release version if not specified otherwise.
 if (NOT CMAKE_BUILD_TYPE)
 	set(CMAKE_BUILD_TYPE Release)
 endif ()
